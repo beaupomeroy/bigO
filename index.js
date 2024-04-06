@@ -15,7 +15,7 @@ function printNumbers(numbers) {
 // ANSWER: O(n)
 
 // Q: What is the space complexity?
-// ANSWER: O(n)
+// ANSWER: O(1)
 
 
 
@@ -38,21 +38,16 @@ function findFourth(numbers) {
   }
 
 // Q: What is the time complexity of of this solution?
-// ANSWER: O(n)
+// ANSWER: O(1)
 
 // Q: Given an array of numbers, what is the space complexity of this function?
 // ANSWER: O(1)
 
 
 // Q: Could you come up with a solution that has a better time complexity? If so, write out that solution and note the time complexity. If not, why not?
-// ANSWER:
+// ANSWER: No
 
-function findFourth(numbers) {
-  if (numbers.length < 4) {
-      return undefined; // If array has less than 4 elements, return undefined
-  }
-  return numbers[3];
-}
+
 
 // 3) -------------------------------------------------------
 function printA() {
@@ -89,7 +84,7 @@ function printC(num, arr) {
   }
 }
 // Q: What is the time complexity of this function?
-// ANSWER: O(num*arr.length)
+// ANSWER: O(n^2)
 
 // Q: What is the space complexity of this function?
 // ANSWER: O(1)
@@ -292,13 +287,13 @@ function countLettersRoundTwo(str) {
 
 
 // Q: Do these functions have the same space complexity?
-// ANSWER: No
+// ANSWER: Yes
 
 
 // Q: What is the space complexity of each? 
-// ANSWER - countLetters: O(1)
+// ANSWER - countLetters: O(n)
 // ANSWER - countLettersRoundTwo: O(n)
 
 
 // Q: Explain how you came to your conclusions about the space complexity of each function. 
-// ANSWER: The first function creates a fixed size object letters with 26 properties representing each letter. The space remains constant. The second function dynamically creates an object letters whose size dpesnds on the unique characters prsent in the input string. Its space complexity depends on the number of unique characters in the input string.
+// ANSWER: Each function is dependent on the size of the string
